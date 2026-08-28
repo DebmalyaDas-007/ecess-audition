@@ -20,9 +20,9 @@ const orbitron = Orbitron({
 });
 
 export const metadata = {
-  title: "ECESS Audition 2025 - Register for Electronics & Communication Engineering Auditions | NIT Durgapur",
-  description: "Join ECESS Audition 2025 at NIT Durgapur! Register now for the Electronics and Communication Engineering Students Society auditions. Open to all ECE students.",
-  keywords: "ECESS Audition 2025, NIT Durgapur, ECE Auditions, Electronics Engineering Auditions, Communication Engineering, Student Society Auditions, College Auditions, Technical Events, Alumni Events, ECE Technical Society, ECESS NIT Durgapur",
+  title: "ECESS Audition 2026 - Register for Electronics & Communication Engineering Auditions | NIT Durgapur",
+  description: "Join ECESS Audition 2026 at NIT Durgapur! Register now for the Electronics and Communication Engineering Students Society auditions. Open to all ECE students.",
+  keywords: "ECESS Audition 2026, NIT Durgapur, ECE Auditions, Electronics Engineering Auditions, Communication Engineering, Student Society Auditions, College Auditions, Technical Events, Alumni Events, ECE Technical Society, ECESS NIT Durgapur",
   authors: [{ name: "ECESS NIT Durgapur" }],
   creator: "ECESS NIT Durgapur",
   publisher: "ECESS NIT Durgapur",
