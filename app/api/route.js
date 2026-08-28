@@ -5,7 +5,7 @@ const formSchema = z.object({
   name: z.string().min(1, "Name is required").max(100),
   email: z.string().email("Invalid email format"),
   phone: z.string().length(10, "Phone number must be 10 digits").regex(/^\d+$/, "Phone must contain only numbers"),
-  domain: z.array(z.enum(["Web Development", "Embedded Systems", "Event Management", "Video Editing", "Graphic Designing"])).min(1, "At least one domain must be selected").max(2, "Maximum 2 domains allowed"),
+  domain: z.array(z.enum(["Web Development", "Embedded Systems & VLSI Design", "Event Management", "Video Editing", "Graphic Designing"])).min(1, "At least one domain must be selected").max(2, "Maximum 2 domains allowed"),
   gender: z.enum(["Male", "Female", "Others"]),
   cgpa: z.coerce.number().min(5.00, "CGPA must be at least 5.00").max(10.00, "CGPA must be at most 10.00"),
   roll_number: z.string().length(8, "Roll number must be exactly 8 characters").regex(/^[A-Za-z0-9]+$/, "Roll number can only contain letters and numbers"),
@@ -59,6 +59,7 @@ export async function POST(req) {
     const { data, error } = await supabase.from("submissions").insert([body]);
 
     if (error) throw error;
+
 
     return new Response(JSON.stringify({ message: "Form submitted successfully!", data }), { status: 200 });
   } catch (error) {

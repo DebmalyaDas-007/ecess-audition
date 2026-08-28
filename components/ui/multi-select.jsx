@@ -21,7 +21,7 @@ import { Badge } from "@/components/ui/badge"
 
 const domains = [
   { display: "Web", value: "Web Development" },
-  { display: "Embedded", value: "Embedded Systems" },
+  { display: "Embedded & VLSI", value: "Embedded Systems & VLSI Design" },
   { display: "Event", value: "Event Management" },
   { display: "Video", value: "Video Editing" },
   { display: "Graphics", value: "Graphic Designing" }

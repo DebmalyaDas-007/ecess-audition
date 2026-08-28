@@ -68,12 +68,12 @@ export default function Home() {
   };
 
   return (
-    <WavyBackground waveWidth={80} blur={15} waveOpacity={0.1} speed="fast">
+    <WavyBackground waveWidth={100} blur={15} waveOpacity={0.1} speed="fast">
       <main className="min-h-screen">
         <section className="flex justify-center items-center font-[family-name:var(--font-geist-sans)] my-4 mt-10">
           <div className="text-white p-3 max-w-8xl mx-auto">
             <header className="text-center mb-8">
-              <h1 className="text-3xl font-bold font-[family-name:var(--font-orbitron)] tracking-wider mb-4">ECESS Audition 2025</h1>
+              <h1 className="text-3xl font-bold font-[family-name:var(--font-orbitron)] tracking-wider mb-4">ECESS Audition 2026</h1>
             </header>
             
             <section className="audition-form">
@@ -138,9 +138,19 @@ export default function Home() {
                   <Textarea name="performance" value={formData.performance} onChange={handleChange} placeholder="Explain why you want to join ECESS and how can you contribute" maxLength="500" />
                 </div>
 
-                <Button className="my-3 text-md w-full shadow-lg hover:shadow-blue-500/50 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-4 rounded-lg flex items-center gap-2 hover:scale-105 transition-transform duration-300" type="submit" disabled={isSubmitting}>
-                  {isSubmitting ? <Loader className="animate-spin" /> : (<> Submit <ArrowUpRight /> </>)}
-                </Button>
+                <Button
+                  className="my-3 text-md w-full shadow-lg hover:shadow-[#f43871]/40 bg-gradient-to-r from-[#f43871] via-[#f38b81] to-[#f438bc] text-white px-6 py-4 rounded-lg flex items-center gap-2 hover:scale-105 transition-all duration-300"
+                  type="submit"
+                    disabled={isSubmitting}
+                >
+  {isSubmitting ? (
+    <Loader className="animate-spin" />
+  ) : (
+    <>
+      Submit <ArrowUpRight />
+    </>
+  )}
+</Button>
               </form>
             </section>
           </div>
